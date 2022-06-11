@@ -290,16 +290,18 @@ GeLU belongs to `torch.nn` namespace. The generated GeLU C/C++ interface looks l
 <details>
   <summary>torch._c namespaces and corresponding files (not completed yet)</summary>
   
-  ## torch._c
-  
   Required to be initialized:
   
-  - `torch._c.*` -> `torch/csrc/autograd/python_variable.cpp` with init function `THPVariable_initModule`
+  - `torch._C.*` -> `torch/csrc/autograd/python_variable.cpp` with init function `THPVariable_initModule`
       - `torch._C._TensorBase`
       - `torch._C._TensorMeta`
       - `torch._C.*` -> `torch/csrc/autograd/generated/python_torch_functions.cpp` with init function `initTorchFunctions`
-  - `torch._c._FunctionBase.*` ->  `torch/csrc/autograd/python_function.cpp` with init function `THPFunction_initModule`
-  - `torch._c._ImperativeEngine.*` -> `torch/csrc/autograd/python_engine.cpp` with init function `THPEngine_initModule`
+  - `torch._C._FunctionBase.*` ->  `torch/csrc/autograd/python_function.cpp` with init function `THPFunction_initModule`
+  - `torch._C._ImperativeEngine.*` -> `torch/csrc/autograd/python_engine.cpp` with init function `THPEngine_initModule`
+
+  ---
+
+  Optional to be initialized:
 
 </details>
 
